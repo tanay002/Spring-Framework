@@ -1,0 +1,2 @@
+Springmvc_crud is an spring hibernate integration mvc basic project to demostrate CRUD 
+operation.
