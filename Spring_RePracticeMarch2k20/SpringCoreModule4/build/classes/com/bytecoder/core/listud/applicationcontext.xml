@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans  
+               http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<bean id="emp" class="com.bytecoder.core.listud.Employee">
+		<constructor-arg value="201" type="int"></constructor-arg>
+		<constructor-arg value="Tanay" type="String"></constructor-arg>
+		<constructor-arg name="pmail">
+			<list>
+				<ref bean="pm1" />
+				<ref bean="pm2" />
+				<ref bean="pm3" />
+				<ref bean="pm4" />
+			</list>
+		</constructor-arg>
+	</bean>
+
+	<bean id="pm1" class="com.bytecoder.core.listud.PersonalMail">
+		<constructor-arg value="tanay.saxena002@gmail.com" type="String"></constructor-arg>
+	</bean>
+
+	<bean id="pm2" class="com.bytecoder.core.listud.PersonalMail">
+		<constructor-arg value="tanay.saxena003@gmail.com" type="String"></constructor-arg>
+	</bean>
+
+	<bean id="pm3" class="com.bytecoder.core.listud.PersonalMail">
+		<constructor-arg value="tanay.saxena0044@gmail.com" type="String"></constructor-arg>
+	</bean>
+
+	<bean id="pm4" class="com.bytecoder.core.listud.PersonalMail">
+		<constructor-arg value="tanayspace@gmail.com" type="String"></constructor-arg>
+	</bean>
+</beans>

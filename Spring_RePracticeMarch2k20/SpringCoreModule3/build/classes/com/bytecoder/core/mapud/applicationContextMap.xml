@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans  
+               http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	<bean id="cmp" class="com.bytecoder.core.mapud.Company">
+		<property name="cid" value="88788"></property>
+		<property name="cname" value="MI Brand PVT LTD"></property>
+		<property name="pname">
+			<map>
+				<entry key-ref="uc1" value-ref="pc1"></entry>
+				<entry key-ref="uc2" value-ref="pc2"></entry>
+				<entry key-ref="uc3" value-ref="pc3"></entry>
+				<entry key-ref="uc4" value-ref="pc4"></entry>
+				                               <!-- map does not contain duplicate key but it may contain duplicate values -->
+			</map>                                    <!--we have to override hashcode and equals method for Userdefined Datatype -->
+
+		</property>
+	</bean>
+
+	<bean id="uc1" class="com.bytecoder.core.mapud.UniqueCode">
+		<property name="uno" value="101"></property>
+		<property name="ucode" value="TX"></property>
+	</bean>
+
+
+	<bean id="uc2" class="com.bytecoder.core.mapud.UniqueCode">
+		<property name="uno" value="102"></property>
+		<property name="ucode" value="TN"></property>
+	</bean>
+
+
+	<bean id="uc3" class="com.bytecoder.core.mapud.UniqueCode">
+		<property name="uno" value="103"></property>
+		<property name="ucode" value="TJ"></property>
+	</bean>
+
+
+	<bean id="uc4" class="com.bytecoder.core.mapud.UniqueCode">
+		<property name="uno" value="101"></property>
+		<property name="ucode" value="TX"></property>
+	</bean>
+
+	<bean id="pc1" class="com.bytecoder.core.mapud.Product">
+		<property name="pname" value="MI Band"></property>
+	</bean>
+
+	<bean id="pc2" class="com.bytecoder.core.mapud.Product">
+		<property name="pname" value="MI TV"></property>
+	</bean>
+
+	<bean id="pc3" class="com.bytecoder.core.mapud.Product">
+		<property name="pname" value="MI Phone"></property>
+	</bean>
+
+	<bean id="pc4" class="com.bytecoder.core.mapud.Product">
+		<property name="pname" value="MI Earphone"></property>
+	</bean>
+</beans>

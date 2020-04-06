@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans  
+               http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<bean id="cmp" class="com.bytecoder.core.map.Company">
+		<constructor-arg value="2672" type="int"></constructor-arg>
+		<constructor-arg value="Xiaomi Private L.T.D (MI)" type="String"></constructor-arg>
+		<constructor-arg name="cproduct">
+			<map>
+			<entry key="102" value="MI TV"></entry>
+			<entry key="103" value="MI Phones"></entry>
+			<entry key="104" value="MI SelfieStick"></entry>
+			<entry key="105" value="MI Band"></entry>
+			<entry key="106" value="MI Pocket Camera"></entry>
+			<entry key="107" value="MI Robot"></entry>
+			<entry key="107" value="MI Cable"></entry>
+			</map>
+		</constructor-arg>
+	</bean>
+</beans>
