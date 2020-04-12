@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-13">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/tanay/OneDrive/Desktop/jar 2/SpringHibernate/hibernate jar/antlr.jar"/>
+	<classpathentry kind="lib" path="C:/Users/tanay/OneDrive/Desktop/jar 2/SpringHibernate/hibernate jar/commons-dbcp-1.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/tanay/OneDrive/Desktop/jar 2/SpringHibernate/hibernate jar/dom4j-1.6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/tanay/OneDrive/Desktop/jar 2/SpringHibernate/hibernate jar/hibernate-commons-annotations-4.0.4.final.jar"/>
+	<classpathentry kind="lib" path="C:/Users/tanay/OneDrive/Desktop/jar 2/SpringHibernate/hibernate jar/hibernate-core-4.1.6.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Users/tanay/OneDrive/Desktop/jar 2/SpringHibernate/hibernate jar/hibernate-entitymanager-4.2.0.final.jar"/>
+	<classpathentry kind="lib" path="C:/Users/tanay/OneDrive/Desktop/jar 2/SpringHibernate/hibernate jar/javassist-3.18.0-ga.jar"/>
+	<classpathentry kind="lib" path="C:/Users/tanay/OneDrive/Desktop/jar 2/SpringHibernate/hibernate jar/javax.persistence.jar"/>
+	<classpathentry kind="lib" path="C:/Users/tanay/OneDrive/Desktop/jar 2/SpringHibernate/hibernate jar/javax.transaction.jar"/>
+	<classpathentry kind="lib" path="C:/Users/tanay/OneDrive/Desktop/jar 2/SpringHibernate/hibernate jar/jboss-logging-3.1.0.GA.jar"/>
+	<classpathentry kind="lib" path="C:/Users/tanay/OneDrive/Desktop/jar 2/SpringHibernate/hibernate jar/mysql-connector-java-5.1.9.jar"/>
+	<classpathentry kind="lib" path="C:/Users/tanay/OneDrive/Desktop/jar 2/SpringHibernate/hibernate jar/org.apache.commons.pool.jar"/>
+	<classpathentry kind="lib" path="C:/Users/tanay/OneDrive/Desktop/jar 2/SpringHibernate/hibernate jar/spring-dao-2.0.6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/tanay/OneDrive/Desktop/jar 2/SpringHibernate/hibernate jar/spring-jdbc-4.1.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/tanay/OneDrive/Desktop/jar 2/SpringHibernate/hibernate jar/spring-orm-4.1.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/tanay/OneDrive/Desktop/jar 2/SpringHibernate/hibernate jar/spring-tx-4.1.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/tanay/OneDrive/Desktop/jar/org.springframework.beans-3.0.1.RELEASE-A.jar"/>
+	<classpathentry kind="lib" path="C:/Users/tanay/OneDrive/Desktop/jar/org.springframework.context-3.0.1.RELEASE-A.jar"/>
+	<classpathentry kind="lib" path="C:/Users/tanay/OneDrive/Desktop/jar/org.springframework.core-3.0.1.RELEASE-A.jar"/>
+	<classpathentry kind="lib" path="C:/Users/tanay/OneDrive/Desktop/jar/org.springframework.expression-3.0.1.RELEASE-A.jar"/>
+	<classpathentry kind="lib" path="C:/Users/tanay/OneDrive/Desktop/jar 2/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/tanay/OneDrive/Desktop/jar/org.springframework.asm-3.0.1.RELEASE-A.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
