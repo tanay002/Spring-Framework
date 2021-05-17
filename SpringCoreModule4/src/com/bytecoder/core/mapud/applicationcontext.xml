@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans  
+               http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	<bean id="qz" class="com.bytecoder.core.mapud.Quiz">
+		<constructor-arg name="qid" value="1567"></constructor-arg>
+		<constructor-arg name="qtopic" value="Java Based Questions"></constructor-arg>
+		<constructor-arg name="no">
+			<map>
+				<entry key-ref="que1" value-ref="ans1"></entry>
+				<entry key-ref="que2" value-ref="ans2"></entry>
+				<entry key-ref="que3" value-ref="ans3"></entry>
+				<entry key-ref="que4" value-ref="ans4"></entry>
+				                               <!-- map does not contain duplicate key but it may contain duplicate values -->
+			</map>                                    <!--we have to override hashcode and equals method for Userdefined Datatype -->
+
+		</constructor-arg>
+	</bean>
+
+	<bean id="que1" class="com.bytecoder.core.mapud.Questions">
+		<constructor-arg name="qno" value="1"></constructor-arg>
+		<constructor-arg name="que" value="How many ways we can create object"></constructor-arg>
+	</bean>
+
+
+	<bean id="que2" class="com.bytecoder.core.mapud.Questions">
+		<constructor-arg name="qno" value="2"></constructor-arg>
+		<constructor-arg name="que" value="Ways to get value of data members"></constructor-arg>
+	</bean>
+
+	<bean id="que3" class="com.bytecoder.core.mapud.Questions">
+		<constructor-arg name="qno" value="2"></constructor-arg>
+		<constructor-arg name="que" value="Name 5 method which can be overrided of object class"></constructor-arg>
+	</bean>
+
+
+	<bean id="que4" class="com.bytecoder.core.mapud.Questions">
+		<constructor-arg name="qno" value="2"></constructor-arg>
+		<constructor-arg name="que" value="Ways to get value of data members"></constructor-arg>
+	</bean>
+
+	<bean id="ans1" class="com.bytecoder.core.mapud.Answers">
+       	<constructor-arg name="ano" value="1"></constructor-arg>
+		<constructor-arg name="ans" value="There is five ways we can create object"></constructor-arg>
+	</bean>
+	
+	<bean id="ans2" class="com.bytecoder.core.mapud.Answers">
+       	<constructor-arg name="ano" value="2"></constructor-arg>
+		<constructor-arg name="ans" value="There is two ways we can get value of data members by getter method and reflection API"></constructor-arg>
+	</bean>
+	
+	<bean id="ans3" class="com.bytecoder.core.mapud.Answers">
+       	<constructor-arg name="ano" value="3"></constructor-arg>
+		<constructor-arg name="ans" value="Five methods are 1. toString() 2. hashCode() 3. equals() 4. finalize 5.clone()"></constructor-arg>
+	</bean>
+	
+	<bean id="ans4" class="com.bytecoder.core.mapud.Answers">
+       	<constructor-arg name="ano" value="2"></constructor-arg>
+		<constructor-arg name="ans" value="There is two ways we can get value of data members by getter method and reflection API"></constructor-arg>
+	</bean>
+</beans>

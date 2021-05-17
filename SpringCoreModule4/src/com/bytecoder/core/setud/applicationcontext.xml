@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans  
+               http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<bean id="cmp" class="com.bytecoder.core.setud.Company">
+		<constructor-arg value="2672" type="int"></constructor-arg>
+		<constructor-arg value="Xiaomi Private L.T.D (MI)" type="String"></constructor-arg>
+		<constructor-arg name="edetails">
+			<set>
+			<ref bean="emp1"/>
+			<ref bean="emp2"/>
+			<ref bean="emp3"/>
+			<ref bean="emp4"/>
+			</set>
+		</constructor-arg>
+	</bean>
+
+	<bean id="emp1" class="com.bytecoder.core.setud.Employees">
+		<constructor-arg name="eid" value="53" type="int"></constructor-arg>
+		<constructor-arg name="ename" value="Tanay Saxena"	type="String"></constructor-arg>
+		<constructor-arg name="dname" value="Backend" type="String"></constructor-arg>
+	</bean>
+	
+	<bean id="emp2" class="com.bytecoder.core.setud.Employees">
+		<constructor-arg name="eid" value="65" type="int"></constructor-arg>
+		<constructor-arg name="ename" value="Rajat Gupta" type="String"></constructor-arg>
+		<constructor-arg name="dname" value="Frontend" type="String"></constructor-arg>
+	</bean>
+	
+	<bean id="emp3" class="com.bytecoder.core.setud.Employees">
+		<constructor-arg name="eid" value="95" type="int"></constructor-arg>
+		<constructor-arg name="ename" value="Lakshya Kashyap" type="String"></constructor-arg>
+		<constructor-arg name="dname" value="DbSecurity" type="String"></constructor-arg>
+	</bean>
+	
+	<bean id="emp4" class="com.bytecoder.core.setud.Employees">
+	                                  <!-- Duplicate data schenario fails...we have to override HashCode and equals method -->
+		<constructor-arg name="eid" value="65" type="int"></constructor-arg>
+		<constructor-arg name="ename" value="Rajat Gupta" type="String"></constructor-arg>
+		<constructor-arg name="dname" value="Frontend" type="String"></constructor-arg>
+	</bean>
+
+</beans>

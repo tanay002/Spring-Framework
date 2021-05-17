@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans  
+               http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+               <bean id="stud" class="coremodule.setterinjection4.List.Student">
+               <property name="sid" value="53"></property>
+               <property name="sname" value="Tanay Rocks"></property>
+               <property name="mobno">
+               <list>
+               <ref bean="mobile1"/>
+               <ref bean="mobile2"/>
+               </list>
+               
+               </property>
+               </bean>
+               
+               <bean id="mobile1" class="coremodule.setterinjection4.List.Mobile">
+               <property name="number" value="8878056735"></property>
+               <property name="code" value="0735"></property> 
+               </bean>
+               
+                <bean id="mobile2" class="coremodule.setterinjection4.List.Mobile">
+               <property name="number" value="9907820661"></property>
+               <property name="code" value="0876"></property> 
+               </bean>
+               </beans>
